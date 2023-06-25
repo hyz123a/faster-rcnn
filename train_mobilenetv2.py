@@ -58,7 +58,7 @@ def main():
     VOC_root = "./"  # VOCdevkit
     aspect_ratio_group_factor = 3
     batch_size = 8
-    amp = False  # 是否使用混合精度训练，需要GPU支持
+    amp = True  # 是否使用混合精度训练，需要GPU支持
 
     # check voc root
     if os.path.exists(os.path.join(VOC_root, "VOCdevkit")) is False:
